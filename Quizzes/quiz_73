@@ -1,4 +1,5 @@
-.py"def build_data_pkg(ms:str,ips:str,mr:str,ipr:str,data:str):
+```
+def build_data_pkg(ms:str,ips:str,mr:str,ipr:str,data:str):
   a = ms.split()
   b=[]
   b.append(a)
@@ -13,4 +14,7 @@
 
 
   y.append(x)
-  return y"
+  return y
+```.py
+
+
