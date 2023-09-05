@@ -16,5 +16,6 @@
       y.append(x)
       return y 
 ```
+![Screen Shot 2023-09-05 at 20 05 31](https://github.com/24536urdj/Year_2-_G12/assets/112072887/b5bb3be1-a765-4432-8cc6-98f6a1df651e)
 
 
