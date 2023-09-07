@@ -12,3 +12,4 @@
 
     print(output)
 ```
+![Screen Shot 2023-09-08 at 5 52 04](https://github.com/24536urdj/Year_2-_G12/assets/112072887/34974999-8de1-45be-89c0-b918c8d9b485)
