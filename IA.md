@@ -914,6 +914,27 @@ header .fa-bars{
 
 </html>
 
+
+
+```
+## Code 4 
+```.jv
+
+
+let signup = document.querySelector(".signup");
+let login = document.querySelector(".login");
+let slider = document.querySelector(".slider");
+let formSection = document.querySelector(".form-section");
+
+signup.addEventListener("click", () => {
+    slider.classList.add("move-slider");
+    formSection.classList.add("form-section-move");
+});
+
+login.addEventListener("click", () => {
+    slider.classList.remove("move-slider");
+    formSection.classList.remove("form-section-move");
+});
 ```
 [^4]: https://www.businessnewsdaily.com/5804-what-is-sql.html#:~:text=Its%20portability%20makes%20it%20a,retrieve%20it%20quickly%20and%20efficiently.
 [^1]: https://www.pinterest.fr/pin/1407443626260334/
