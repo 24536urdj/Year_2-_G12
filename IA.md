@@ -829,7 +829,92 @@ header .fa-bars{
 
 
 ```
+## Code 3 
+```.py
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                         initial-scale=1.0">
+    <title> Join I-note now </title>
+    <link rel="stylesheet"
+          href="/static/my_style2.css">
+</head>
+
+<body>
+<header>
+    <h1 class="heading">Join I-note now</h1>
+    <h3 class="title">Do u have already an account ?</h3>
+</header>
+
+<!-- container div -->
+<div class="container">
+
+    <!-- upper button section to select
+             the login or signup form -->
+    <div class="slider"></div>
+    <div class="btn">
+        <button class="login">Login</button>
+        <button class="signup">Signup</button>
+
+    </div>
+
+    <!-- Form section that contains the
+             login and the signup form -->
+    <div class="form-section">
+
+        <!-- login form -->
+        <div class="login-box">
+            <form class="succ" method="post"></form>
+                <input type="email"
+                       class="email ele" name="email1"
+
+                       placeholder="youremail@uwcisak.jp"
+                       pattern="+2024.email@uwcisak.jp" required
+
+
+
+
+            >
+                <input type="password"
+                       name="password2"
+                       class="password ele"
+                       placeholder="password">
+                <button class="clkbtn" onclick = "window.location.href='/main_page';">Login </button>
+        </div>
+
+        <!-- signup form -->
+        <div class="signup-box">
+            <input type="text"
+                   class="name ele"
+                   placeholder="Enter your real name">
+            <input type="emails "
+                   pattern="2024.email@uwcisak.jp" or pattern = "2023.email@uwcisak.jp"required
+
+                   class="email ele"
+                   placeholder="youremail@email.com"
+                   %if email %
+            >
+            <input type="passwords"
+                   class="password ele"
+                   placeholder="password">
+            <input type="passwords"
+                   class="password ele"
+                   placeholder="Confirm password">
+            <button class="clkbtn">Signup</button>
+             <button class="clkbtn" onclick = "window.location.href='/login_page';">Signup</button>
+        </div>
+    </div>
+</div>
+<script src="/static/login3.js"></script>
+</body>
+
+</html>
+
+```
 [^4]: https://www.businessnewsdaily.com/5804-what-is-sql.html#:~:text=Its%20portability%20makes%20it%20a,retrieve%20it%20quickly%20and%20efficiently.
 [^1]: https://www.pinterest.fr/pin/1407443626260334/
 [^2]:https://www.analyticsinsight.net/10-reasons-why-python-is-one-of-the-best-programming-languages/#:~:text=Due%20to%20its%20ease%20of,by%20amateur%20professionals%20as%20well.
