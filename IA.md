@@ -1,7 +1,8 @@
-# Unit_3: project of creating a blog for my client 
+# IA: project of creating a website for my client 
 
-![](https://github.com/24536urdj/Unit_3/blob/main/Project_unit_3/dd36613d-aaf4-4c07-acd1-0026086aa5bd.gif)
 
+![Screen Shot 2023-11-04 at 13 37 18](https://github.com/24536urdj/Year_2-_G12/assets/112072887/2efb917d-aa30-43bd-a579-62e797f88eb3)
+###  fig.1: this picture was taking from Pinterest[^1]
 
 ## Criteria A planning
 
