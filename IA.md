@@ -831,7 +831,7 @@ header .fa-bars{
 ```
 
 [^4]: https://www.businessnewsdaily.com/5804-what-is-sql.html#:~:text=Its%20portability%20makes%20it%20a,retrieve%20it%20quickly%20and%20efficiently.
-[^1]: https://www.pinterest.fr/pin/538743174184866151/
+[^1]: https://www.pinterest.fr/pin/1407443626260334/
 [^2]:https://www.analyticsinsight.net/10-reasons-why-python-is-one-of-the-best-programming-languages/#:~:text=Due%20to%20its%20ease%20of,by%20amateur%20professionals%20as%20well.
 [^3]:https://codeclan.com/blog/top-5-reasons-you-should-learn-html-css/
     
