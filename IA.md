@@ -24,6 +24,9 @@ if found[^1]. The proposed solution will be evaluated according to criteria A an
 5.[issue tackled : payment methods]
 Users need to be able to pay for the products they want to buy through linking paypal to the website, the payment needs to be secure and uncomplicated.
 6.[issue tackled : contact the organizing party ] The solution needs to have a contact page where users can send emails to the organizing party and contact for either collaboration or just inquiring information.
+
+
+
 ## Criteria B design 
 
 
@@ -343,11 +346,494 @@ Users need to be able to pay for the products they want to buy through linking p
 </html>
 ```
 
+## Code_2 
+```.py
+
+:root{
+    --pink:#e84393
 
 
 
+}
+
+*{
+    margin:0;padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 
 
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden
+
+}
+section{
+    padding: 2rem 9%;
+
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333333;
+    padding: 1rem;
+    margin : 2rem 0;
+    background: rgba(255,51,153,.05);
+}
+.heading span{
+    color: var(--pink);
+
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem  3.5rem;
+    cursor: pointer ;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--pink);
+
+
+}
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000 ;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0.1);
+
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    color: var(--pink) ;
+    font-size: medium;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--pink);
+
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: 5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+@media (max-width:991px ){
+    html{
+        font-size: 55%;
+
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position:left;
+    }
+    
+}
+
+@media (max-width:768px ){
+    html .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top:0;left: 0;right: 0;
+        background:#eee ;
+        border-top: .1rem solid rgba(0,0,0,.1) ;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0,100% 0,100% 0,0 0) ;
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,.1) ;
+        display: block;
+    }
+    .home .content h3{
+        font-size:5rem ;
+
+    }
+    .home .content span{
+        font-size: 2.5rem;
+
+    }
+    }
+.icons-container .icons h3 {
+
+    font-size: 2rem;
+
+}
+.icons-container .icons span{
+    font-size: 1.7rem;
+
+}
+
+
+
+@media (max-width:450px ) {
+    html {
+        font-size: 50%;
+
+    }
+    .heading{
+        font-size: 3rem;
+
+    }
+
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("Barton Croft.jpeg")  ;
+    background-repeat: repeat ;
+    background-size: cover;
+    background-position: center;
+
+}
+.home .content h3{
+    font-size:6rem ;
+    color: #333;
+
+}
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom:3rem ;
+
+
+}
+.about .row .content{
+    font-size: 3rem;
+    color: #333;
+
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999999;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+
+
+
+}
+.icons-container{
+    background: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+
+}
+.icons-container .icons{
+    background: #ffffff;
+    border: 1rem solid rgba(0,0,0,.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+
+
+}
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+
+}
+.icons-container .icons h3{
+    color: #333333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+
+}
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+
+}
+.Products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+
+}
+.Products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: 1rem solid rgba(0,0,0,.1);
+    position: relative;
+
+
+}
+
+.Products .box-container .box .discount{
+    position: absolute;
+    top: 1rem;left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: var(--pink);
+    background: rgba(255,51,153,.05);
+    z-index:   1 ;
+    border-radius: .5rem;
+}
+.Products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.Products .box-container .box .image img{
+    height: 25rem;
+
+
+}
+.Products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.Products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem;left: 0;right: 0;
+    display: flex;
+
+}
+.Products .box-container .box:hover .image .icons{
+    bottom: 0;
+
+}
+.Products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--pink);
+    color: #ffffff;
+
+
+}
+.Products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #ffffff;
+    border-right: .1rem solid #ffffff;
+    width:100%;
+
+}
+.Products .box-container .box .image .icons a:hover{
+    background: #333333;
+
+
+}
+.Products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+
+}
+.Products .box-container .box .content h3{
+    font-size:2.5rem ;
+    color: #333333;
+
+}
+.Products .box-container .box .content .price{
+    font-size:2.5rem ;
+    color: var(--pink);
+    font-weight: bolder ;
+    padding-top: 1rem;
+
+}
+.Products .box-container .box .content .price span{
+    font-size: 1.5rem ;
+    color: #999999;
+    font-weight: lighter;
+    text-decoration: line-through;
+
+}
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.review .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:3rem 2rem ;
+    position: relative;
+    border: .1rem solid rgba(0,0,0,.1);
+
+
+}
+.review .box-container .box .fa-quote-right{
+    position: absolute;
+    bottom:3rem ;right: 3rem;
+    font-size: 6rem;
+    color: #eeeeee;
+
+
+}
+.review .box-container .box .stars{
+    color: var(--pink);
+    font-size:2rem ;
+
+}
+.review .box-container .box .p{
+    color: #eeeeee;
+    font-size: 1.5rem;
+    line-height:1.5rem ;
+    padding-top: 2rem;
+
+
+
+}
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+.review .box-container .box .user img{
+   height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.review .box-container .box .user h3{
+    font-size: 1.5rem;
+    color:#999999;
+
+}
+
+.review .box-container .box .user span{
+    font-size: 1.5rem;
+    color:#999999;
+
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-transform: lowercase;
+}
+.contact .row form{
+    flex:  1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    background: #ffffff;
+    border-radius: .5rem;
+    height: 15rem;
+    text-transform: lowercase;
+
+
+
+}
+
+
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #FF4742;
+    text-transform: lowercase;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+
+
+}
+.contact .row form .box:focus{
+    border-color: var(--pink);
+    text-transform: lowercase;
+
+
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    text-transform: lowercase;
+}
+.contact .btn{
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+
+
+```
+
+[^4]: https://www.businessnewsdaily.com/5804-what-is-sql.html#:~:text=Its%20portability%20makes%20it%20a,retrieve%20it%20quickly%20and%20efficiently.
+[^1]: https://www.pinterest.fr/pin/538743174184866151/
+[^2]:https://www.analyticsinsight.net/10-reasons-why-python-is-one-of-the-best-programming-languages/#:~:text=Due%20to%20its%20ease%20of,by%20amateur%20professionals%20as%20well.
+[^3]:https://codeclan.com/blog/top-5-reasons-you-should-learn-html-css/
+    
 
 
 
